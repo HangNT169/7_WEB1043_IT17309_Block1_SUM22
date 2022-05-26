@@ -72,12 +72,16 @@ function Dog(name, tuoi) {
     return "gau gau";
   };
 }
+let ten = prompt("nhap ten");
+let tuoi = prompt("nhap tuoi");
+let d = new Dog(ten, tuoi);
+console.log(d.tiengKeu());
+// Dog[0] = new Dog("cho1", 10);
+// Dog[1] = new Dog("cho2", 1);
+// Dog[2] = new Dog("cho3", 2);
+// Dog[3] = new Dog("cho4", 20);
+// Dog[4] = new Dog("cho5", 8);
 
-Dog[0] = new Dog("cho1", 10);
-Dog[1] = new Dog("cho2", 1);
-Dog[2] = new Dog("cho3", 2);
-Dog[3] = new Dog("cho4", 20);
-Dog[4] = new Dog("cho5", 8);
 // Mang in cac phan tu trong list Object
 // for - in
 // for (let i in Dog) {
