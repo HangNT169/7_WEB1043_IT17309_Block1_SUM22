@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h3>ĐĂNG KÝ KHOÁ HỌC ONLINE</h3>
+      <form>
+        <!-- Dong 1 -->
+        <div>
+          <span>Họ tên</span>
+          <input type="text" class="inputText" required />
+          <span></span>
+        </div>
+        <!-- Dong 2 -->
+        <div>
+          <span>Email</span>
+          <input type="email" class="inputText" required />
+          <span></span>
+        </div>
+        <!-- Dong 3 -->
+        <div>
+          <span>Số điện thoại</span>
+          <input type="number" class="inputText" required />
+          <span></span>
+        </div>
+        <!-- Dong 4 -->
+        <div>
+          <span>Khoá học</span>
+          <select name="khoaHoc" id="khoaHoc" onchange="onChangeKhoaHoc();">
+            <option value="500" selected>Khoa HTML</option>
+            <option value="800">Khoa JS</option>
+            <option value="1000">Khoa PHP</option>
+          </select>
+        </div>
+        <!-- Dong 5 -->
+        <div>
+          <span>Học phí</span>
+          <input id="hocPhi" class="inputText" required />
+          <span></span>
+        </div>
+        <!-- Dong 6 -->
+        <div>
+          <span>Hình thức học</span>
+          <input
+            type="radio"
+            class="radioBtn"
+            name="radioGroup"
+            value="Tai Truong"
+            checked
+            required
+          />
+          <span> Tại Trường</span>
+          <input
+            type="radio"
+            class="radioBtn"
+            name="radioGroup"
+            value="HocOnline"
+            required
+          />
+          <span> Học Online</span>
+        </div>
+        <!-- Button -->
+        <input
+          type="button"
+          id="register"
+          onclick="register2();"
+          value="Đăng ký"
+        />
+      </form>
+    </div>
+    <script src="../B11_ValidateForm/index.js"></script>
+  </body>
+</html>
